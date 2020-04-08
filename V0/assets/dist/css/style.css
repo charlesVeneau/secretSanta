@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #EF3B36;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), to(#EF3B36));
+  background: linear-gradient(to left, #FFFFFF, #EF3B36);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

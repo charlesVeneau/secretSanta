@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa</title>
+    <link rel="stylesheet" href="./assets/dist/css/style.css">
+</head>
+<body>
+    <div id="mainContainer">
+        <h1 id="formTitle">Secret Santa</h1>
+        <form action="#" id="form">
+            <div id="inputsSection">
+                <input type="text" class="person" placeholder="" value="Audrey">
+                <input type="text" class="person" placeholder="" value="Dorothée">
+                <input type="text" class="person" placeholder="" value="Marine">
+                <input type="text" class="person" placeholder="" value="Charles">
+            </div>
+            <button class="addNew" onclick="addNew()">Add New</button>
+            <button class="removeLast" onclick="removeLast()">Remove Last</button>
+            <button id="santaBtn" onClick="santaMe()">Santa !!!</button>
+        </form>
+        <p>information icon</p>
+    </div>
+    <div id="results">
+
+    </div>
+
+<script src="./assets/dist/script.js" type="text/javascript"></script>
+</body>
+</html>
