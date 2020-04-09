@@ -28,11 +28,12 @@ santaMe = () =>{
 
     //Array with every person
     var santaArray = [];  
-    var personArray = []  
+     
     for (santa of santas){
         santaArray.push(santa.value)
-        personArray.push(santa.value)
     }
+
+    var personArray = [...santaArray] 
     //forEach method to assign each person to another onex
     santaArray.forEach( (santa, i) => {
         getRandomInt = () =>{
@@ -51,7 +52,6 @@ santaMe = () =>{
                 let personSanta = personArray[randomNum];
                 console.log(santa + ' est le secret santa de ' + personArray[randomNum])
                 personArray.splice(randomNum, 1);
-                console.log(personArray + " " + santaArray);
                 return
             }
         }

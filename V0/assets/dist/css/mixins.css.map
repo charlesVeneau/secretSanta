@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../style/sass/libs/mixins.scss",
+        "../../style/sass/libs/colors.scss"
+    ],
+    "names": [],
+    "file": "mixins.css"
+}

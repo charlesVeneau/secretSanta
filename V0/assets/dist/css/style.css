@@ -1,12 +1,60 @@
+html {
+  height: 100%;
+}
+
 body {
-  margin: 0;
-  padding: 0;
   background: #EF3B36;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), to(#EF3B36));
-  background: linear-gradient(to left, #FFFFFF, #EF3B36);
+  background: -webkit-gradient(linear, right top, left top, from(#1d771d), to(#EF3B36));
+  background: linear-gradient(to left, #1d771d, #EF3B36);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainContainer {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6px;
+  border-radius: 6px;
+}
+
+#formTitle {
+  font-family: 'Nunito', sans-serif;
+  color: #1d771d;
+  border-bottom: 1px solid #000;
+  margin: 0 0 10px;
+}
+
+.description {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#santaBtn {
+  background: #EF3B36;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#1d771d), to(#EF3B36));
+  background: linear-gradient(to left, #1d771d, #EF3B36);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  padding: 8px;
+  border: 0;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=style.css.map */

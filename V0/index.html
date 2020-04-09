@@ -4,23 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Santa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8373de9ba4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/dist/css/style.css">
 </head>
 <body>
     <div id="mainContainer">
-        <h1 id="formTitle">Secret Santa</h1>
+        <div class="header">
+            <h1 id="formTitle">&#127876 Secret Santa &#127876</h1>
+            <p class="description">Christmas is coming... It's time to draw the name of whom you gonna make a gift. &#127873</p>
+        </div>
         <form action="#" id="form">
             <div id="inputsSection">
-                <input type="text" class="person" placeholder="" value="Audrey">
-                <input type="text" class="person" placeholder="" value="Dorothée">
-                <input type="text" class="person" placeholder="" value="Marine">
-                <input type="text" class="person" placeholder="" value="Charles">
+                <h2 class="sectionTitle">List of participants</h2>
+                <div class="santaInfo">
+                    <input type="text" class="personName" placeholder="" value="Audrey">
+                    <input type="email" class="personEmail" value="veneauc@hotmail.fr" name="" id="">
+                </div>
+                <div class="santaInfo">
+                    <input type="text" class="personName" placeholder="" value="Dorothée">
+                    <input type="email" class="personEmail" value="veneauc@hotmail.fr" name="" id="">
+                </div>
+                <div class="santaInfo">
+                    <input type="text" class="personName" placeholder="" value="Marine">
+                    <input type="email" class="personEmail" value="veneauc@hotmail.fr" name="" id="">
+                </div>
+                <div class="santaInfo">
+                    <input type="text" class="personName" placeholder="" value="Charles">
+                    <input type="email" class="personEmail" value="veneauc@hotmail.fr" name="" id="">
+                </div>
             </div>
-            <button class="addNew" onclick="addNew()">Add New</button>
-            <button class="removeLast" onclick="removeLast()">Remove Last</button>
+            <button class="addNew" onclick="addNew()">Add</button>
+            <button class="removeLast" onclick="removeLast()">Remove</button>
             <button id="santaBtn" onClick="santaMe()">Santa !!!</button>
         </form>
-        <p>information icon</p>
+        <a href="#" class="infoButton"><i class="fas fa-info-circle fa-lg"></i></a>
     </div>
     <div id="results">
 
