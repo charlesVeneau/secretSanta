@@ -1,22 +1,36 @@
-html {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
   height: 100%;
 }
 
 body {
-  background: #EF3B36;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#1d771d), to(#EF3B36));
-  background: linear-gradient(to left, #1d771d, #EF3B36);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin: 0;
-  padding: 0;
-  height: 100%;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  font-weight: 300;
+}
+
+.header {
+  width: 100%;
+  height: 50%;
+  background: #dd3e54;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#6be585), to(#dd3e54));
+  background: linear-gradient(to left, #6be585, #dd3e54);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  font-family: 'Great Vibes', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -25,36 +39,56 @@ body {
           align-items: center;
 }
 
-#mainContainer {
-  width: 40%;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 6px;
-  border-radius: 6px;
+.header .formTitle {
+  font-size: 3.3em;
 }
 
-#formTitle {
-  font-family: 'Nunito', sans-serif;
-  color: #1d771d;
-  border-bottom: 1px solid #000;
-  margin: 0 0 10px;
+.header .formTitle::before, .header .formTitle::after {
+  content: "\1f384";
+}
+
+.header p {
+  font-size: 1.4em;
+}
+
+.header p::before, .header p::after {
+  content: "\1F381";
 }
 
 .description {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 36px;
+  width: 60%;
+  margin: 0 auto;
 }
 
-#santaBtn {
-  background: #EF3B36;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#1d771d), to(#EF3B36));
-  background: linear-gradient(to left, #1d771d, #EF3B36);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.description .descTitle {
+  background-color: #dd3e54;
   color: #fff;
   padding: 8px;
-  border: 0;
-  border-radius: 6px;
+  width: 33%;
+  margin: 10px auto 30px;
+}
+
+.description p {
+  line-height: 1.8em;
+}
+
+.description .redInfo {
+  color: #dd3e54;
+  font-weight: 500;
+}
+
+.separation {
+  background-image: url("/V0/src/img/christmasTree.jpg");
+  height: 250px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 30px 0;
+}
+
+.separation a {
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
