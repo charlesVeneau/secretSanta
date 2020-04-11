@@ -20,17 +20,17 @@ body{
 
 .header{
     width: 100%;
-    height: 50%;
-    background: $red;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, $green, $red);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, $green, $red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 40%;
+    background: $Christmas-2-hex;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, $Christmas-1-hex, $Christmas-2-hex);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, $Christmas-1-hex, $Christmas-2-hex); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     font-family: 'Great Vibes', cursive;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    .formTitle{
+    .siteTitle{
         &::before, &::after{
             content: "\1f384"
         }
@@ -46,10 +46,10 @@ body{
 
 .description{
     padding: 36px;
-    width: 60%;
+    width: 56%;
     margin: 0 auto;
     .descTitle{
-        background-color: $red;
+        background-color: $Christmas-2-hex;
         color: #fff;
         padding: 8px;
         width: 33%;
@@ -59,20 +59,106 @@ body{
         line-height: 1.8em;
     }
     .redInfo{
-        color: $red;
+        color: $Christmas-2-hex;
         font-weight: 500;
+        margin-top: 30px;
     }
 }
 
+
 .separation{
     background-image: url("/V0/src/img/christmasTree.jpg");
-    height: 250px;
+    height: 350px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    margin: 30px 0;
-    a{
-        bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .disable{
+        display: none;
+    }
+    span{
+        background-color: #000;
+        padding: 4px;
+        margin: 4px;
+        a{
+            color: #fff;
+            font-size: 0.8em;
+            text-decoration: none;
+            transition: font-size .6s;
+            &:hover{
+                font-size: .9em;
+            }
+        }
     }
 }
+
+#form{
+    padding: 36px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.formTitle{
+    @extend .descTitle;
+    background-color: $Christmas-1-hex;
+    color: #fff;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+#inputsSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.santaInfo{
+    display: flex;
+    flex-flow: column;
+    // width: 35%;
+    margin: 12px;
+    border: 1px solid #cccccc;
+    padding: 24px;
+    box-shadow: 1px 2px 12px  #dddddd;
+
+    input{
+        line-height: 28px;
+        padding: 4px;
+        font-size: 1em;
+        width: 80;
+        border: none;
+        border-bottom: 1px solid #cccccc;
+        margin: 12px 12px 0;
+        outline: none;
+    }
+    input:focus{
+        color: #fff;
+        border-color: $Christmas-1-hex;
+    }
+    button{
+        line-height: 28px;
+        padding: 4px;
+        font-size: 1em;
+        border: none;
+        border-radius: 0 0 8px 4px;
+        background-color: $Christmas-2-hex;
+        color: #fff;
+        margin: 0 12px 12px 12px ;
+        outline: none;
+        transition: background-color .6s;
+        &:hover{
+            background-color: lighten($Christmas-2-hex, 10%);
+        }
+    }
+}
+
+.empty{
+    background-color: rgb(238, 238, 238);
+}
+
+
+

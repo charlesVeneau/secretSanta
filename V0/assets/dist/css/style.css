@@ -1,3 +1,5 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +17,12 @@ body {
 
 .header {
   width: 100%;
-  height: 50%;
-  background: #dd3e54;
+  height: 40%;
+  background: #FF3C2D;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#6be585), to(#dd3e54));
-  background: linear-gradient(to left, #6be585, #dd3e54);
+  background: -webkit-gradient(linear, right top, left top, from(#228533), to(#FF3C2D));
+  background: linear-gradient(to left, #228533, #FF3C2D);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   font-family: 'Great Vibes', cursive;
@@ -39,11 +41,11 @@ body {
           align-items: center;
 }
 
-.header .formTitle {
+.header .siteTitle {
   font-size: 3.3em;
 }
 
-.header .formTitle::before, .header .formTitle::after {
+.header .siteTitle::before, .header .siteTitle::after {
   content: "\1f384";
 }
 
@@ -57,12 +59,12 @@ body {
 
 .description {
   padding: 36px;
-  width: 60%;
+  width: 56%;
   margin: 0 auto;
 }
 
-.description .descTitle {
-  background-color: #dd3e54;
+.description .descTitle, .description .formTitle {
+  background-color: #FF3C2D;
   color: #fff;
   padding: 8px;
   width: 33%;
@@ -74,21 +76,132 @@ body {
 }
 
 .description .redInfo {
-  color: #dd3e54;
+  color: #FF3C2D;
   font-weight: 500;
+  margin-top: 30px;
 }
 
 .separation {
   background-image: url("/V0/src/img/christmasTree.jpg");
-  height: 250px;
+  height: 350px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.separation a {
-  bottom: 0;
+.separation .disable {
+  display: none;
+}
+
+.separation span {
+  background-color: #000;
+  padding: 4px;
+  margin: 4px;
+}
+
+.separation span a {
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: none;
+  -webkit-transition: font-size .6s;
+  transition: font-size .6s;
+}
+
+.separation span a:hover {
+  font-size: .9em;
+}
+
+#form {
+  padding: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formTitle {
+  background-color: #228533;
+  color: #fff;
+  padding: 10px;
+  margin: 12px 0;
+}
+
+#inputsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.santaInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 12px;
+  border: 1px solid #cccccc;
+  padding: 24px;
+  -webkit-box-shadow: 1px 2px 12px  #dddddd;
+          box-shadow: 1px 2px 12px  #dddddd;
+}
+
+.santaInfo input {
+  line-height: 28px;
+  padding: 4px;
+  font-size: 1em;
+  width: 80;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  margin: 12px 12px 0;
+  outline: none;
+}
+
+.santaInfo input:focus {
+  color: #fff;
+  border-color: #228533;
+}
+
+.santaInfo button {
+  line-height: 28px;
+  padding: 4px;
+  font-size: 1em;
+  border: none;
+  border-radius: 0 0 8px 4px;
+  background-color: #FF3C2D;
+  color: #fff;
+  margin: 0 12px 12px 12px;
+  outline: none;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+}
+
+.santaInfo button:hover {
+  background-color: #ff6b60;
+}
+
+.empty {
+  background-color: #eeeeee;
 }
 /*# sourceMappingURL=style.css.map */
